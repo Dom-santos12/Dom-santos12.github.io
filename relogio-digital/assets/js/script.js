@@ -13,7 +13,6 @@ const relogio = setInterval(function time(){
     let now = new Date();
     let performanceTime = performance.now();
     let Milliseconds = now.getMilliseconds()
-    let centesimo = Milliseconds;
 
      // <<< (codigo teste)
     

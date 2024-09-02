@@ -6,21 +6,15 @@
 }
 
 :root {
-     background:
-     #0a49bd;
-
+     background {
     .color1 { #0a49bd };
     .color2 { #2d5fce };
     .color3 { #4f76de };
     .color4 { #728cef };
     .color5 { #94a2ff };
 }
-
-body {
-    height: 100vh;
-    width: 100%;
-    
 }
+    
 header {
     height: 100vh;
     width: 100%;
@@ -43,6 +37,7 @@ header {
     box-shadow: 0px 0px 10px rgb(0, 0, 0,.5);
     padding: 15px;
     gap: 5px;
+    background-size: cover;
 }
 .relogio section {
     height: 170px;
@@ -57,6 +52,7 @@ header {
     letter-spacing: 3px;
     flex-wrap: wrap;
     overflow: hidden;
+    background-size: contain;
     
 }
 .relogio p {
@@ -70,4 +66,25 @@ header {
     font-size: 10px;
     display: flex;
     justify-items: center;
+}
+
+@media screen and (min-width: 600px) {
+    section {
+        height: 100vh;
+        width: 100%;
+    }
+
+    
+}
+.button {
+    position: absolute;
+    display: flex;
+    height: 40px;
+    align-items: center;
+    color: chartreuse;
+    background-color: var();
+    border: transparent;
+    border-radius: 7px;
+    padding: 5px;
+    flex-wrap: wrap;
 }
