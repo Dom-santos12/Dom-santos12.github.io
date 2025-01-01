@@ -14,7 +14,26 @@
     .color5 { #94a2ff };
 }
 }
-    
+ 
+/* Estilo padrão para dispositivos grandes */
+.header {
+    font-size: 16px;
+  }
+  
+  /* Para dispositivos com largura máxima de 768px (tablets e smartphones em orientação retrato) */
+  @media (max-width: 768px) {
+    .header {
+      font-size: 14px;
+    }
+  }
+  
+  /* Para dispositivos com largura máxima de 480px (smartphones em orientação paisagem ou retrato) */
+  @media (max-width: 480px) {
+    .header {
+      font-size: 12px;
+    }
+  }
+  
 header {
     height: 100vh;
     width: 100%;
@@ -24,6 +43,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
     
 }
 
