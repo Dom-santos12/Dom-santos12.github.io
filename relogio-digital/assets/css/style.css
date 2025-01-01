@@ -16,20 +16,20 @@
 }
  
 /* Estilo padrão para dispositivos grandes */
-.header {
+.relogio {
     font-size: 16px;
   }
   
   /* Para dispositivos com largura máxima de 768px (tablets e smartphones em orientação retrato) */
   @media (max-width: 768px) {
-    .header {
+    .relogio {
       font-size: 14px;
     }
   }
   
   /* Para dispositivos com largura máxima de 480px (smartphones em orientação paisagem ou retrato) */
   @media (max-width: 480px) {
-    .header {
+    .relogio {
       font-size: 12px;
     }
   }
@@ -91,13 +91,6 @@ header {
     justify-items: center;
 }
 
-@media screen and (min-width: 600px) {
-    .relogio {
-        width: 100%;
-    }
-
-    
-}
 .button {
     position: relative;
     display: flex;
