@@ -17,18 +17,20 @@
 }
  
 /* Estilo padrão para dispositivos grandes */
+@media (min-width: 769px){
    .relogio {
       background: conic-gradient(black,green 20%);
     }
     .relogio p {
       font-size: 2em;
     }
+  }
   
   /* Para dispositivos com largura máxima de 768px (tablets e smartphones em orientação retrato) */
   @media (max-width: 768px) {
     .relogio {
       color: white;
-      background: conic-gradient(black,blue 20%);
+      background: conic-gradient(black,blue 8%);
     }
     .relogio p {
       font-size: 1.8em;
@@ -52,7 +54,7 @@ header {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    
+    padding: 1em;
 }
 
 .relogio {
@@ -88,6 +90,7 @@ section {
 .relogio p {
     font-weight: bolder;
     color:white;
+
 }
 
 .relogio p.tempo {
@@ -109,4 +112,5 @@ section {
     padding: 10px;
     flex-wrap: wrap;
     gap: 5px;
+    font: bolder;
 }
