@@ -15,6 +15,8 @@ const relogio = setInterval(function time(){
     let Milliseconds = now.getMilliseconds()
 
      // <<< (codigo teste)
+
+    cs = Math.floor(cs/10); //math.floor arredonda para baixo o numero inteiro
     
     if (hr < 10) hr = "0" + hr;
 
@@ -22,12 +24,11 @@ const relogio = setInterval(function time(){
     
     if (s < 10) s = "0" + s;
     
-    if (cs) cs = cs/10;
+    if (cs) cs = cs;
 
-    if (cs) cs = cs.toFixed(0);
     
-    if (cs < 10) cs = "0" + cs;
-    
+
+    if (cs < 10) cs = "0" + cs;    
 
     
     
