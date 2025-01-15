@@ -26,6 +26,8 @@ const relogio = setInterval(function time(){
 
     if (cs) cs = cs.toFixed(0);
     
+    if (cs < 10) cs = "0" + cs;
+    
 
     
     

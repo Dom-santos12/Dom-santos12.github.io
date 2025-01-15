@@ -19,7 +19,7 @@
 /* Estilo padrão para dispositivos grandes */
 @media (min-width: 769px){
    .relogio {
-      background: conic-gradient(black,green 20%);
+      background: conic-gradient(black,green 10%);
     }
     .relogio p {
       font-size: 2em;
@@ -30,7 +30,7 @@
   @media (max-width: 768px) {
     .relogio {
       color: white;
-      background: conic-gradient(black,blue 8%);
+      background: conic-gradient(black,blue 10%);
     }
     .relogio p {
       font-size: 1.8em;
@@ -41,7 +41,7 @@
   @media (max-width: 480px) {
     .relogio {
       font-size: 1em;
-      background: conic-gradient(black,gold 20%);
+      background: conic-gradient(black,gold 10%);
     }
   }
   
