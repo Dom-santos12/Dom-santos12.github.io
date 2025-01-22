@@ -7,19 +7,18 @@
 }
 
 :root {
-     background {
-    .color1 { #0a49bd };
-    .color2 { #2d5fce };
-    .color3 { #4f76de };
-    .color4 { #728cef };
-    .color5 { #94a2ff };
-}
+    --color1 : #0a49bd ;
+    --color2 : #2d5fce ;
+    --color3 :#4f76de ;
+    --color4 :#728cef ;
+    --color5 :#94a2ff ;
 }
  
 /* Estilo padrão para dispositivos grandes */
 @media (min-width: 769px){
    .relogio {
       background: conic-gradient(black,green 10%);
+      color: var(--color1);
     }
     .relogio p {
       font-size: 2em;
@@ -49,19 +48,17 @@ header {
     height: 100vh;
     width: 100%;
     display: flex;
-    /*background: conic-gradient(blue, black);*/
-    background-position: bottom to right;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
     padding: 1em;
+    position: relative;
+    
 }
 
 .relogio {
     
     display: flex;
-    flex-direction: column;
-    
+    flex-direction: column; 
     border-radius: 3px;
     height: 400px;
     width: 600px;
@@ -69,7 +66,7 @@ header {
     padding: 15px;
     gap: 5px;
     align-content: center;
-
+    position: relative;
 }
 
 section {
@@ -93,24 +90,29 @@ section {
 
 }
 
-.relogio p.tempo {
-    font: bolder;
+p.tempo {
     font-size: 0.7em;
     display: flex;
     justify-items: center;
 }
 
-.button {
-    position: relative;
+.button{
     display: flex;
     height: 40px;
     align-items: center;
     color: white;
     background-color: rgba(0, 0, 0, 0.363);
-    border: transparent;
+    border:transparent;
     border-radius: 7px;
-    padding: 10px;
+    padding: 20px;
     flex-wrap: wrap;
     gap: 5px;
     font: bolder;
+    align-content: center;
+
+}
+.button:hover {
+  background:rgba(255, 255, 255, 0.781);
+  color: black;
+  display: flex;
 }
